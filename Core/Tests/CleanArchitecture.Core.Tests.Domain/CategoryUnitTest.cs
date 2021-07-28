@@ -8,7 +8,7 @@ namespace CleanArchitecture.Core.Tests.Domain
 {
     public class CategoryUnitTest
     {
-        [Fact(DisplayName ="Create Valid Category")]
+        [Fact(DisplayName = "Create Valid Category")]
         public void InsertCategory_WithValidParameters_ResultObjectValidState()
         {
             Action action = () => new Category(1, "CategoryName");
