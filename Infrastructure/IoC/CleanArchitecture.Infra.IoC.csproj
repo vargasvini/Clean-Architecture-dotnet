@@ -4,4 +4,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Application\CleanArchitecture.Core.Application.csproj" />
+    <ProjectReference Include="..\..\Core\Domain\CleanArchitecture.Core.Domain.csproj" />
+    <ProjectReference Include="..\Data\CleanArchitecture.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>
