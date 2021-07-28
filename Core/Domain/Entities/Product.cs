@@ -58,9 +58,9 @@ namespace CleanArchitecture.Core.Domain.Entities
             DomainExceptionValidation.When(string.IsNullOrEmpty(name),
                 "Invalid Name: Property name is required!");
             DomainExceptionValidation.When(name.Length < 3,
-                "Invalid Name: Too short, name must have 3 characters minimun!");
+                "Invalid Name: Too short, name must have 3 characters minimum!");
             DomainExceptionValidation.When(string.IsNullOrEmpty(description),
-                "Invalid Description: Property name is required!");
+                "Invalid Description: Property description is required!");
             DomainExceptionValidation.When(description.Length < 5,
                 "Invalid Description: Too short, description must have 5 characters minimum!");
             DomainExceptionValidation.When(price < 0,

@@ -42,7 +42,7 @@ namespace CleanArchitecture.Core.Domain.Entities
             DomainExceptionValidation.When(string.IsNullOrEmpty(name), 
                 "Invalid Name: Property name is required!");
             DomainExceptionValidation.When(name.Length < 3, 
-                "Invalid Name: Too short, name must have 3 characters minimun!");
+                "Invalid Name: Too short, name must have 3 characters minimum!");
 
             return false;
         }
