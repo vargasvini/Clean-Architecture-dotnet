@@ -67,7 +67,7 @@ namespace CleanArchitecture.Core.Domain.Entities
                 "Invalid Price: Value cannot be less than zero!");
             DomainExceptionValidation.When(stock < 0,
                 "Invalid Stock: Value cannot be less than zero!");
-            DomainExceptionValidation.When(image.Length > 255,
+            DomainExceptionValidation.When(image?.Length > 255,
                 "Invalid Image: Too long, image name can be a maximum of 255 characters!");
             return false;
         }
