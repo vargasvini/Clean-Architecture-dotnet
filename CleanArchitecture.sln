@@ -29,7 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.API", "AP
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B8B80D85-043E-4B35-AC13-884A127F623E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Core.Tests.Domain", "Core\Tests\CleanArchitecture.Core.Tests.Domain\CleanArchitecture.Core.Tests.Domain.csproj", "{03CDCDE5-6941-48BB-968C-5C850072A77B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Core.Tests.Domain", "Core\Tests\CleanArchitecture.Core.Tests.Domain\CleanArchitecture.Core.Tests.Domain.csproj", "{03CDCDE5-6941-48BB-968C-5C850072A77B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

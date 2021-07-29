@@ -13,8 +13,8 @@ namespace CleanArchitecture.Infra.Data.EntitiesConfiguration
 
             builder.HasData(
                 new Category(1, "Cozinha e Gastronomia"),
-                new Category(1, "Ferramentas e Jardim"),
-                new Category(1, "Video Games")
+                new Category(2, "Ferramentas e Jardim"),
+                new Category(3, "Video Games")
             );
         }
     }
