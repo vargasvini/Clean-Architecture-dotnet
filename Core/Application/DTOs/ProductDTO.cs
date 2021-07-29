@@ -6,7 +6,6 @@ namespace CleanArchitecture.Core.Application.DTOs
 {
     public class ProductDTO
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
@@ -19,6 +18,5 @@ namespace CleanArchitecture.Core.Application.DTOs
 
         public int CategoryId { get; set; }
         public Category Category { get; set; }
-
     }
 }
