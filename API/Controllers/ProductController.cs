@@ -31,6 +31,20 @@ namespace CleanArchitecture.API.Controllers
             }
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            try
+            {
+                var product = await productService.GetByIdAsync(id);
+                return StatusCode(200, product);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
         //[HttpPost]
         //public async Task<IActionResult> Post([FromBody] CategoryDTO categoryDTO)
         //{

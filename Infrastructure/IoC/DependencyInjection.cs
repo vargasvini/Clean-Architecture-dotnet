@@ -8,6 +8,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ServiceStack.Redis;
 using System;
 
 namespace CleanArchitecture.Infra.IoC
@@ -29,6 +30,10 @@ namespace CleanArchitecture.Infra.IoC
             services.AddScoped<IProductService, ProductService>();
             services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
             services.AddMediatR(myHandlers);
+            services.AddScoped<IRedisClient>(x => 
+            new RedisClient(Environment.GetEnvironmentVariable("redisHost"), 
+                            int.Parse(Environment.GetEnvironmentVariable("redisPort")), 
+                            Environment.GetEnvironmentVariable("redisPassword")));
 
             return services;
         }

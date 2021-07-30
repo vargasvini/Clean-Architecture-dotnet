@@ -14,7 +14,10 @@
       "launchBrowser": true,
       "launchUrl": "swagger",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "redisHost": "redis-17311.c282.east-us-mz.azure.cloud.redislabs.com",
+        "redisPort": "17311",
+        "redisPassword": "gzpneO3hCdBdmDJz55GqpFLRmZHmOzKI"
       }
     },
     "CleanArchitecture.API": {
