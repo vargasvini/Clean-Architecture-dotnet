@@ -1,13 +1,16 @@
 ﻿using CleanArchitecture.Core.Application.DTOs;
 using CleanArchitecture.Core.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace CleanArchitecture.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CategoriesController : ControllerBase
     {
         private readonly ICategoryService categoryService;
@@ -18,11 +21,17 @@ namespace CleanArchitecture.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<ActionResult<IEnumerable<CategoryDTO>>> Get()
         {
             try
             {
+                var teste = User.Claims;
                 var categories = await categoryService.GetCategoriesAsync();
+                if(categories == null)
+                {
+                     StatusCode(404, "Categories not found!");       
+                }
+
                 return StatusCode(200, categories);
             }
             catch (Exception ex)
