@@ -2,10 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <!-- <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath> -->
+    <UserSecretsId>S03EO6-3fe68897-ffb2-409f-8aa3-91f6f1a6d7c4</UserSecretsId>
+    <!-- <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS> -->
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.14" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.4" />
   </ItemGroup>
 

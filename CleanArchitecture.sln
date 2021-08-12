@@ -33,10 +33,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.Core.Test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{B1A80D26-3A62-4FC6-BF09-B60F1FF0FF02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.WebUI", "WebUI\CleanArchitecture.WebUI\CleanArchitecture.WebUI.csproj", "{DA94897B-3382-4DA0-B913-FC684ED93142}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchitecture.WebUI", "WebUI\CleanArchitecture.WebUI\CleanArchitecture.WebUI.csproj", "{DA94897B-3382-4DA0-B913-FC684ED93142}"
 	ProjectSection(ProjectDependencies) = postProject
 		{743F5899-0BA8-446C-9FF7-3587CC5E1847} = {743F5899-0BA8-446C-9FF7-3587CC5E1847}
 	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9D177CE3-FD14-4A23-91A8-5D07BB1DA7DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,6 +74,10 @@ Global
 		{DA94897B-3382-4DA0-B913-FC684ED93142}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA94897B-3382-4DA0-B913-FC684ED93142}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA94897B-3382-4DA0-B913-FC684ED93142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D177CE3-FD14-4A23-91A8-5D07BB1DA7DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D177CE3-FD14-4A23-91A8-5D07BB1DA7DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D177CE3-FD14-4A23-91A8-5D07BB1DA7DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D177CE3-FD14-4A23-91A8-5D07BB1DA7DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
