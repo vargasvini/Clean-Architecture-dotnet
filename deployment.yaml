@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-test-deployment
+spec:
+  selector:
+    matchLabels:
+      app: api-test-pod
+  template:
+    metadata:
+      labels:
+        app: api-test-pod
+    spec:
+      containers:
+      - name: api-test-container
+        image: goustiee/api-test:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
